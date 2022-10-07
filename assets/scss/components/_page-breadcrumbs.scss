@@ -1,0 +1,41 @@
+@use "../common/" as *;
+@use "../presets/" as *;
+
+
+.breadcrumbs {
+
+  @extend %container;
+
+  height: 32px;
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    gap: 5px;
+  }
+
+  &__list li:not(:last-child):after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 1px;
+    background-color: $color-black;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    padding-right: 5px;
+
+    &--active {
+      font-weight: 300;
+    }
+  }
+}

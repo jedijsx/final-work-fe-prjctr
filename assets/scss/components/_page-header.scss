@@ -10,14 +10,17 @@
   justify-content: space-between;
   align-items: center;
 
-  .menu__list,
-  .action__list {
+  .menu__list, .action__list {
     display: flex;
     align-items: center;
   }
 
   .menu__list {
     gap: 30px;
+  }
+
+  .menu__link--active {
+    color: $color-highlight;
   }
 
   .menu__link:hover {
