@@ -1,0 +1,58 @@
+@use "../../common/" as *;
+@use "../../presets/" as *;
+
+.catalog {
+  padding-top: 24px;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 44px;
+  }
+
+  &-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &-view {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &-sort__title {
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+  &-sort__menu {
+    border: none;
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+  &-sort__menu:focus {
+    outline: none;
+  }
+
+  &-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    column-gap: 50px;
+  }
+}
+
+.button {
+  cursor: pointer;
+  display: inline-flex;
+  border: none;
+  transition: .5s;
+}
+
+.button:hover {
+  opacity: .5;
+}

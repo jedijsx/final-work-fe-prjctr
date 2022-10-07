@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  
+
   <header class="page-header">
 
     <nav class="page-header__menu">
@@ -70,77 +70,189 @@
       </ul>
     </div>
 
-    <aside class="filter">
-      <form class="filter__form" action="/ua/zhinkam/" method="get">
-        <div class="form__section">
-          <span class="form__title form__title--active">Розмір</span>
-          <div>
-            <input class="form__checkbox" type="checkbox" id="XXS" name="XXS">
-            <label class="form__label" for="XXS">32 | XXS (53)</label>
+    <div class="main-catalog__inner">
+
+      <aside class="filter">
+        <form class="filter__form" action="/ua/zhinkam/" method="get">
+          <div class="form__section">
+            <span class="form__title form__title--active">Розмір</span>
+            <div>
+              <input class="form__checkbox" type="checkbox" id="XXS" name="XXS">
+              <label class="form__label" for="XXS">32 | XXS (53)</label>
+            </div>
+            <div>
+              <input class="form__checkbox" type="checkbox" id="XS" name="XS">
+              <label class="form__label" for="XS">34 | XS (60)</label>
+            </div>
+            <div>
+              <input class="form__checkbox" type="checkbox" id="S" name="S">
+              <label class="form__label" for="S">36 | S (60)</label>
+            </div>
+            <div>
+              <input class="form__checkbox" type="checkbox" id="M" name="M">
+              <label class="form__label" for="M">38 | M (60)</label>
+            </div>
+            <div>
+              <input class="form__checkbox" type="checkbox" id="L" name="L">
+              <label class="form__label" for="L">40 | L (60)</label>
+            </div>
+            <div>
+              <input class="form__checkbox" type="checkbox" id="XL" name="XL">
+              <label class="form__label" for="XL">42 | XL (58)</label>
+            </div>
+            <div>
+              <input class="form__checkbox" type="checkbox" id="XXL" name="XXL">
+              <label class="form__label" for="XXL">46 | XXL (13)</label>
+            </div>
+            <div>
+              <input class="form__checkbox" type="checkbox" id="XXXL" name="XXXL">
+              <label class="form__label" for="XXXL">48 | XХXL (4)</label>
+            </div>
           </div>
-          <div>
-            <input class="form__checkbox" type="checkbox" id="XS" name="XS">
-            <label class="form__label" for="XS">34 | XS (60)</label>
+          <div class="form__section">
+            <span class="form__title form__title--active">Колір</span>
+            <div>
+              <input class="form__checkbox" type="checkbox" id="white" name="white">
+              <label class="form__label" for="white">білий</label>
+            </div>
+            <div>
+              <input class="form__checkbox" type="checkbox" id="black" name="black">
+              <label class="form__label" for="black">чорний</label>
+            </div>
+            <div>
+              <input class="form__checkbox" type="checkbox" id="beige" name="beige">
+              <label class="form__label" for="beige">бежевий</label>
+            </div>
+            <div>
+              <input class="form__checkbox" type="checkbox" id="green" name="green">
+              <label class="form__label" for="green">зелений</label>
+            </div>
+            <div>
+              <input class="form__checkbox" type="checkbox" id="blue" name="blue">
+              <label class="form__label" for="blue">синій</label>
+            </div>
           </div>
-          <div>
-            <input class="form__checkbox" type="checkbox" id="S" name="S">
-            <label class="form__label" for="S">36 | S (60)</label>
+          <div class="form__section">
+            <span class="form__title">Сезон</span>
           </div>
-          <div>
-            <input class="form__checkbox" type="checkbox" id="M" name="M">
-            <label class="form__label" for="M">38 | M (60)</label>
+          <div class="form__sections">
+            <span class="form__title">Тканина</span>
           </div>
-          <div>
-            <input class="form__checkbox" type="checkbox" id="L" name="L">
-            <label class="form__label" for="L">40 | L (60)</label>
+          <div class="form__sections">
+            <span class="form__title">Рукав</span>
           </div>
-          <div>
-            <input class="form__checkbox" type="checkbox" id="XL" name="XL">
-            <label class="form__label" for="XL">42 | XL (58)</label>
+        </form>
+      </aside>
+  
+      <section class="catalog">
+  
+        <div class="catalog-header">
+
+          <div class="catalog-actions">
+
+            <div class="catalog-view">
+              <button class="button catalog-view__six">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="6" height="6" fill="#565656" />
+                  <rect y="8" width="6" height="6" fill="#565656" />
+                  <rect x="8" y="8" width="6" height="6" fill="#565656" />
+                  <rect x="8" width="6" height="6" fill="#565656" />
+                </svg>
+              </button>
+              <button class="button catalog-view__nine">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="4" height="4" fill="#C4C4C4" />
+                  <rect y="5" width="4" height="4" fill="#C4C4C4" />
+                  <rect y="10" width="4" height="4" fill="#C4C4C4" />
+                  <rect x="10" width="4" height="4" fill="#C4C4C4" />
+                  <rect x="10" y="5" width="4" height="4" fill="#C4C4C4" />
+                  <rect x="10" y="10" width="4" height="4" fill="#C4C4C4" />
+                  <rect x="5" width="4" height="4" fill="#C4C4C4" />
+                  <rect x="5" y="5" width="4" height="4" fill="#C4C4C4" />
+                  <rect x="5" y="10" width="4" height="4" fill="#C4C4C4" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="catalog-sort">
+              <span class="catalog-sort__title">Сортувати за:</span>
+              <select class="catalog-sort__menu" name="sort" id="sort">
+                <option value="value1" selected>новинки</option>
+                <option value="value2">рейтингом</option>
+              </select>
+            </div>
+
           </div>
-          <div>
-            <input class="form__checkbox" type="checkbox" id="XXL" name="XXL">
-            <label class="form__label" for="XXL">46 | XXL (13)</label>
-          </div>
-          <div>
-            <input class="form__checkbox" type="checkbox" id="XXXL" name="XXXL">
-            <label class="form__label" for="XXXL">48 | XХXL (4)</label>
-          </div>
+
+          <h2 class="catalog-heading">Жіночі вишиванки</h2>
+
         </div>
-        <div class="form__section">
-          <span class="form__title form__title--active">Колір</span>
-          <div>
-            <input class="form__checkbox" type="checkbox" id="white" name="white">
-            <label class="form__label" for="white">білий</label>
+  
+        <div class="catalog-items">
+  
+          <div class="product">
+            <img class="product__image" src="./assets/img/pages/catalog/products/image1.jpg" alt="product image">
+            <p class="product__title">
+              Вишиванка з рослинним орнаментом Lito
+            </p>
+            <p class="product__price">
+              2 800 грн.
+            </p>
           </div>
-          <div>
-            <input class="form__checkbox" type="checkbox" id="black" name="black">
-            <label class="form__label" for="black">чорний</label>
+  
+          <div class="product">
+            <img class="product__image" src="./assets/img/pages/catalog/products/image2.jpg" alt="product image">
+            <p class="product__title">
+              Вишиванка блакитного кольору з рослинним орнаментом Fialka
+            </p>
+            <p class="product__price">
+              3 400 грн.
+            </p>
           </div>
-          <div>
-            <input class="form__checkbox" type="checkbox" id="beige" name="beige">
-            <label class="form__label" for="beige">бежевий</label>
+  
+          <div class="product">
+            <img class="product__image" src="./assets/img/pages/catalog/products/image3.jpg" alt="product image">
+            <p class="product__title">
+              Лляна вишиванка з геометричним орнаментом Nezalezhni
+            </p>
+            <p class="product__price">
+              4 200 грн.
+            </p>
           </div>
-          <div>
-            <input class="form__checkbox" type="checkbox" id="green" name="green">
-            <label class="form__label" for="green">зелений</label>
+  
+          <div class="product">
+            <img class="product__image" src="./assets/img/pages/catalog/products/image4.jpg" alt="product image">
+            <p class="product__title">
+              Вишиванка з рослинним орнаментом Kashtan
+            </p>
+            <p class="product__price">
+              3 800 грн.
+            </p>
           </div>
-          <div>
-            <input class="form__checkbox" type="checkbox" id="blue" name="blue">
-            <label class="form__label" for="blue">синій</label>
+  
+          <div class="product">
+            <img class="product__image" src="./assets/img/pages/catalog/products/image5.jpg" alt="product image">
+            <p class="product__title">
+              Легка блузка вільного крою з орнаментом Indi
+            </p>
+            <p class="product__price">
+              3 800 грн.
+            </p>
           </div>
+  
+          <div class="product">
+            <img class="product__image" src="./assets/img/pages/catalog/products/image6.jpg" alt="product image">
+            <p class="product__title">
+              Біла вишиванка вільного крою Svitanok
+            </p>
+            <p class="product__price">
+              2 980 грн.
+            </p>
+          </div>
+  
         </div>
-        <div class="form__section">
-          <span class="form__title">Сезон</span>
-        </div>
-        <div class="form__sections">
-          <span class="form__title">Тканина</span>
-        </div>
-        <div class="form__sections">
-          <span class="form__title">Рукав</span>
-        </div>
-      </form>
-    </aside>
+      </section>
+    </div>
 
   </main>
 

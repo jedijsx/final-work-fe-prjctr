@@ -1,0 +1,23 @@
+@use "../../common/" as *;
+@use "../../presets/" as *;
+
+.product {
+  &__image {
+    width: 507px;
+    height: 500px;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.66;
+    margin-bottom: 5px;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.66;
+  }
+}

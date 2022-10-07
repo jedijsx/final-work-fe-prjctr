@@ -1,2 +1,18 @@
 @use "../../common/" as *;
 @use "../../presets/" as *;
+
+.main-catalog {
+  @extend %container;
+
+  &__inner {
+    display: flex;
+  }
+
+  .filter {
+    flex-basis: 16%;
+  }
+
+  .catalog {
+    flex-basis: 84%;
+  }
+}

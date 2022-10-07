@@ -312,7 +312,7 @@ template {
 }
 
 @font-face {
-  font-family: "DelaGothicOne";
+  font-family: "Dela Gothic One";
   src: url("../fonts/DelaGothicOne-Regular.woff2") format("woff2"), url("../fonts/DelaGothicOne-Regular.woff") format("woff");
   font-weight: 400;
   font-display: swap;
@@ -372,6 +372,14 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+h2 {
+  font-family: "Dela Gothic One";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.4;
+  text-transform: uppercase;
 }
 
 .page-header {
@@ -563,6 +571,109 @@ ul {
   background-color: #DA1F39;
 }
 
+.main-catalog__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main-catalog .filter {
+  -ms-flex-preferred-size: 16%;
+      flex-basis: 16%;
+}
+.main-catalog .catalog {
+  -ms-flex-preferred-size: 84%;
+      flex-basis: 84%;
+}
+
 .filter {
   padding-top: 24px;
+}
+
+.catalog {
+  padding-top: 24px;
+}
+.catalog-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 44px;
+}
+.catalog-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.catalog-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.catalog-sort__title {
+  font-weight: 300;
+  font-size: 12px;
+}
+.catalog-sort__menu {
+  border: none;
+  font-weight: 300;
+  font-size: 12px;
+}
+.catalog-sort__menu:focus {
+  outline: none;
+}
+.catalog-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.button {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: none;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button:hover {
+  opacity: 0.5;
+}
+
+.product__image {
+  width: 507px;
+  height: 500px;
+  margin-bottom: 10px;
+}
+.product__title {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.66;
+  margin-bottom: 5px;
+}
+.product__price {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.66;
 }
