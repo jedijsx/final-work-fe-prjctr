@@ -1,0 +1,59 @@
+@use "../common/" as *;
+@use "../presets/" as *;
+
+.page-header {
+
+  @extend %container;
+
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .menu__list,
+  .action__list {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu__list {
+    gap: 30px;
+  }
+
+  .menu__link:hover {
+    color: $color-highlight;
+  }
+
+  .action__list {
+    gap: 20px;
+  }
+
+  .action__lang, .action__currency {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .action__lang::after, .action__currency::after {
+    content: "";
+    background-image: url('../img/components/page-header/ic-arrow.svg');
+    width: 8px;
+    height: 4px;
+    background-position: center;
+    background-size: cover; 
+  }
+
+  .action__button {
+    height: 25px;
+    width: 25px;
+    display: block;
+
+    &--search {
+      background-image: url('../img/components/page-header/ic-search.svg');
+    }
+
+    &--cart {
+      background-image: url('../img/components/page-header/ic-cart.svg');
+    }
+  }
+}
