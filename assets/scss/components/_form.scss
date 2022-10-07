@@ -1,0 +1,70 @@
+@use "../common/" as *;
+@use "../presets/" as *;
+
+.filter__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form__title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.66;
+  display: flex;
+  gap: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.form__title:hover {
+  opacity: .4;
+}
+
+.form__title::after {
+  content: url('../img/components/page-header/ic-arrow.svg');
+}
+
+.form__title--active::after {
+  transform: rotate(180deg);
+}
+
+.form__label {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.66;
+  color: $color-gray;
+}
+
+.form__section div {
+  display: flex;
+  gap: 5px;
+}
+
+.form__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.form__checkbox + label {
+  display: flex;
+  user-select: none;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.form__checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid $color-gray;
+}
+
+.form__checkbox:checked + label::before {
+  border: 1px solid $color-highlight;
+  background-color: $color-highlight;
+}

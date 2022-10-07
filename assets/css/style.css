@@ -341,7 +341,7 @@ template {
   font-weight: 700;
   font-display: swap;
 }
-.breadcrumbs, .page-header {
+.main-catalog, .page-header {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 10px;
@@ -473,4 +473,96 @@ ul {
 }
 .breadcrumbs__link--active {
   font-weight: 300;
+}
+
+.filter__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.form__title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.66;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.form__title:hover {
+  opacity: 0.4;
+}
+
+.form__title::after {
+  content: url("../img/components/page-header/ic-arrow.svg");
+}
+
+.form__title--active::after {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.form__label {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.66;
+  color: #565656;
+}
+
+.form__section div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+
+.form__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.form__checkbox + label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.form__checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #565656;
+}
+
+.form__checkbox:checked + label::before {
+  border: 1px solid #DA1F39;
+  background-color: #DA1F39;
+}
+
+.filter {
+  padding-top: 24px;
 }
