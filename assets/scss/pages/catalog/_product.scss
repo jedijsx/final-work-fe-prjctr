@@ -2,10 +2,27 @@
 @use "../../presets/" as *;
 
 .product {
-  &__image {
-    width: 507px;
-    height: 500px;
+
+  flex-basis: calc(50% - 28px);
+
+  &__view {
+    max-width: 507px;
+    max-height: 500px;
+    background-image: url('../img/pages/catalog/products/back-image-product.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 10px;
+  }
+
+  &__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: .7s;
+  }
+
+  &__image:hover {
+    transform: scale(0.8);
   }
 
   &__title {

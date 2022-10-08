@@ -143,13 +143,11 @@
           </div>
         </form>
       </aside>
-  
+
       <section class="catalog">
-  
+
         <div class="catalog-header">
-
           <div class="catalog-actions">
-
             <div class="catalog-view">
               <button class="button catalog-view__six">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -173,7 +171,6 @@
                 </svg>
               </button>
             </div>
-
             <div class="catalog-sort">
               <span class="catalog-sort__title">Сортувати за:</span>
               <select class="catalog-sort__menu" name="sort" id="sort">
@@ -181,17 +178,17 @@
                 <option value="value2">рейтингом</option>
               </select>
             </div>
-
           </div>
-
           <h2 class="catalog-heading">Жіночі вишиванки</h2>
-
         </div>
-  
+
         <div class="catalog-items">
-  
           <div class="product">
-            <img class="product__image" src="./assets/img/pages/catalog/products/image1.jpg" alt="product image">
+            <div class="product__view">
+              <a class="product__link" href="#">
+                <img class="product__image" src="./assets/img/pages/catalog/products/image1.jpg" alt="product image">
+              </a>
+            </div>
             <p class="product__title">
               Вишиванка з рослинним орнаментом Lito
             </p>
@@ -199,9 +196,12 @@
               2 800 грн.
             </p>
           </div>
-  
           <div class="product">
-            <img class="product__image" src="./assets/img/pages/catalog/products/image2.jpg" alt="product image">
+            <div class="product__view">
+              <a class="product__link" href="#">
+                <img class="product__image" src="./assets/img/pages/catalog/products/image2.jpg" alt="product image">
+              </a>
+            </div>
             <p class="product__title">
               Вишиванка блакитного кольору з рослинним орнаментом Fialka
             </p>
@@ -209,9 +209,12 @@
               3 400 грн.
             </p>
           </div>
-  
           <div class="product">
-            <img class="product__image" src="./assets/img/pages/catalog/products/image3.jpg" alt="product image">
+            <div class="product__view">
+              <a class="product__link" href="#">
+                <img class="product__image" src="./assets/img/pages/catalog/products/image3.jpg" alt="product image">
+              </a>
+            </div>
             <p class="product__title">
               Лляна вишиванка з геометричним орнаментом Nezalezhni
             </p>
@@ -219,9 +222,12 @@
               4 200 грн.
             </p>
           </div>
-  
           <div class="product">
-            <img class="product__image" src="./assets/img/pages/catalog/products/image4.jpg" alt="product image">
+            <div class="product__view">
+              <a class="product__link" href="#">
+                <img class="product__image" src="./assets/img/pages/catalog/products/image4.jpg" alt="product image">
+              </a>
+            </div>
             <p class="product__title">
               Вишиванка з рослинним орнаментом Kashtan
             </p>
@@ -229,9 +235,12 @@
               3 800 грн.
             </p>
           </div>
-  
           <div class="product">
-            <img class="product__image" src="./assets/img/pages/catalog/products/image5.jpg" alt="product image">
+            <div class="product__view">
+              <a class="product__link" href="#">
+                <img class="product__image" src="./assets/img/pages/catalog/products/image5.jpg" alt="product image">
+              </a>
+            </div>
             <p class="product__title">
               Легка блузка вільного крою з орнаментом Indi
             </p>
@@ -239,9 +248,12 @@
               3 800 грн.
             </p>
           </div>
-  
           <div class="product">
-            <img class="product__image" src="./assets/img/pages/catalog/products/image6.jpg" alt="product image">
+            <div class="product__view">
+              <a class="product__link" href="#">
+                <img class="product__image" src="./assets/img/pages/catalog/products/image6.jpg" alt="product image">
+              </a>
+            </div>
             <p class="product__title">
               Біла вишиванка вільного крою Svitanok
             </p>
@@ -249,9 +261,34 @@
               2 980 грн.
             </p>
           </div>
-  
         </div>
+
+        <div class="catalog-pagination">
+          <a class="catalog-pagination__more" href="#">Показати більше</a>
+          <ul class="catalog-pagination__list">
+            <li class="catalog-pagination__item">
+              <a class="catalog-pagination__link catalog-pagination__link--active" href="#">1</a>
+            </li>
+            <li class="catalog-pagination__item">
+              <a class="catalog-pagination__link" href="#">2</a>
+            </li>
+            <li class="catalog-pagination__item">
+              <a class="catalog-pagination__link" href="#">3</a>
+            </li>
+            <li class="catalog-pagination__item">
+              <a class="catalog-pagination__link" href="#">...</a>
+            </li>
+            <li class="catalog-pagination__item">
+              <a class="catalog-pagination__link" href="#">6</a>
+            </li>
+            <li class="catalog-pagination__item">
+              <a class="catalog-pagination__link" href="#">Наступна</a>
+            </li>
+          </ul>
+        </div>
+
       </section>
+      
     </div>
 
   </main>

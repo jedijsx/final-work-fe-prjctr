@@ -1,0 +1,40 @@
+@use "../../common/" as *;
+@use "../../presets/" as *;
+
+.catalog-pagination {
+  padding-top: 64px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 28%;
+
+  &__more {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  &__more:hover {
+    text-decoration: none;
+    color: $color-highlight;
+  }
+
+  &__list {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.66;
+
+    &--active {
+      color: $color-dark-gray;
+    }
+  }
+
+  &__link:hover {
+    color: $color-highlight;
+  }
+}

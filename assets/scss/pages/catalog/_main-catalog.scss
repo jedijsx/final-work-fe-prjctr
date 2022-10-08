@@ -4,6 +4,8 @@
 .main-catalog {
   @extend %container;
 
+  padding-bottom: 130px;
+
   &__inner {
     display: flex;
   }
