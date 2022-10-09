@@ -10,7 +10,8 @@
   justify-content: space-between;
   align-items: center;
 
-  .menu__list, .action__list {
+  .menu__list,
+  .action__list {
     display: flex;
     align-items: center;
   }
@@ -21,6 +22,7 @@
 
   .menu__link--active {
     color: $color-highlight;
+    font-weight: 700;
   }
 
   .menu__link:hover {
@@ -31,19 +33,22 @@
     gap: 20px;
   }
 
-  .action__lang, .action__currency {
+  .action__lang,
+  .action__currency {
     display: flex;
-    align-items: center;
     gap: 5px;
   }
 
-  .action__lang::after, .action__currency::after {
-    content: "";
-    background-image: url('../img/components/page-header/ic-arrow.svg');
-    width: 8px;
-    height: 4px;
-    background-position: center;
-    background-size: cover; 
+  .action__currency {
+    font-weight: 100;
+    font-size: 20px;
+  }
+
+  .action__lang::after,
+  .action__currency::after {
+    content: url('../img/components/page-header/ic-arrow.svg');
+    position: relative;
+    top: -3px;
   }
 
   .action__button {
@@ -55,8 +60,16 @@
       background-image: url('../img/components/page-header/ic-search.svg');
     }
 
+    &--search:hover {
+      background-image: url('../img/components/page-header/ic-search-hover.svg');
+    }
+
     &--cart {
       background-image: url('../img/components/page-header/ic-cart.svg');
+    }
+
+    &--cart:hover {
+      background-image: url('../img/components/page-header/ic-cart-hover.svg');
     }
   }
 }

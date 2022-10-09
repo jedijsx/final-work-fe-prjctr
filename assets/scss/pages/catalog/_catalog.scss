@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 44px;
+    padding-bottom: 40px;
   }
 
   &-actions {
@@ -36,6 +36,7 @@
 
   &-sort__menu:focus {
     outline: none;
+    cursor: pointer;
   }
 
   &-items {

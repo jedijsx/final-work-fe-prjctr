@@ -319,6 +319,12 @@ template {
 }
 @font-face {
   font-family: "Raleway";
+  src: url("../fonts/Raleway-Thin.woff") format("woff");
+  font-weight: 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
   src: url("../fonts/Raleway-Light.woff") format("woff");
   font-weight: 300;
   font-display: swap;
@@ -398,7 +404,8 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
 }
-.page-header .menu__list, .page-header .action__list {
+.page-header .menu__list,
+.page-header .action__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,6 +418,7 @@ h2 {
 }
 .page-header .menu__link--active {
   color: #DA1F39;
+  font-weight: 700;
 }
 .page-header .menu__link:hover {
   color: #DA1F39;
@@ -418,22 +426,22 @@ h2 {
 .page-header .action__list {
   gap: 20px;
 }
-.page-header .action__lang, .page-header .action__currency {
+.page-header .action__lang,
+.page-header .action__currency {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 5px;
 }
-.page-header .action__lang::after, .page-header .action__currency::after {
-  content: "";
-  background-image: url("../img/components/page-header/ic-arrow.svg");
-  width: 8px;
-  height: 4px;
-  background-position: center;
-  background-size: cover;
+.page-header .action__currency {
+  font-weight: 100;
+  font-size: 20px;
+}
+.page-header .action__lang::after,
+.page-header .action__currency::after {
+  content: url("../img/components/page-header/ic-arrow.svg");
+  position: relative;
+  top: -3px;
 }
 .page-header .action__button {
   height: 25px;
@@ -443,8 +451,14 @@ h2 {
 .page-header .action__button--search {
   background-image: url("../img/components/page-header/ic-search.svg");
 }
+.page-header .action__button--search:hover {
+  background-image: url("../img/components/page-header/ic-search-hover.svg");
+}
 .page-header .action__button--cart {
   background-image: url("../img/components/page-header/ic-cart.svg");
+}
+.page-header .action__button--cart:hover {
+  background-image: url("../img/components/page-header/ic-cart-hover.svg");
 }
 
 .page-footer {
@@ -478,31 +492,34 @@ h2 {
 .page-footer .navigation__item {
   margin-bottom: 10px;
 }
-.page-footer .navigation__link {
+.page-footer .navigation__link,
+.page-footer .contacts__link,
+.page-footer .network__heading {
   font-weight: 300;
   font-size: 14px;
   line-height: 1.66;
 }
-.page-footer .navigation__link--base {
+.page-footer .navigation__link--base,
+.page-footer .contacts__link--base,
+.page-footer .network__heading--base {
   font-weight: 700;
   color: #DA1F39;
+}
+.page-footer .navigation__link--base:hover,
+.page-footer .contacts__link--base:hover,
+.page-footer .network__heading--base:hover {
+  opacity: 0.4;
 }
 .page-footer .contacts__item {
   margin-bottom: 10px;
 }
 .page-footer .contacts__link {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 1.66;
   margin-right: 20px;
 }
 .page-footer .contacts__link--heading {
   text-decoration: underline;
 }
 .page-footer .network__heading {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 1.66;
   text-decoration: underline;
   margin-bottom: 10px;
   display: block;
@@ -515,6 +532,9 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.page-footer .network__icon:hover {
+  opacity: 0.4;
 }
 .page-footer__cipyright {
   font-weight: 300;
@@ -643,9 +663,17 @@ h2 {
   width: 10px;
   height: 10px;
   border: 1px solid #565656;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .form__checkbox:checked + label::before {
+  border: 1px solid #DA1F39;
+  background-color: #DA1F39;
+}
+
+.form__checkbox:hover + label::before {
   border: 1px solid #DA1F39;
   background-color: #DA1F39;
 }
@@ -668,7 +696,7 @@ h2 {
 }
 
 .filter {
-  padding-top: 24px;
+  padding-top: 40px;
 }
 
 .catalog {
@@ -684,7 +712,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 44px;
+  padding-bottom: 40px;
 }
 .catalog-actions {
   display: -webkit-box;
@@ -715,6 +743,7 @@ h2 {
 }
 .catalog-sort__menu:focus {
   outline: none;
+  cursor: pointer;
 }
 .catalog-items {
   display: -webkit-box;

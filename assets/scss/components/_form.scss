@@ -62,9 +62,16 @@
   width: 10px;
   height: 10px;
   border: 1px solid $color-gray;
+  transition: .5s;
 }
 
 .form__checkbox:checked + label::before {
   border: 1px solid $color-highlight;
   background-color: $color-highlight;
 }
+
+.form__checkbox:hover + label::before {
+  border: 1px solid $color-highlight;
+  background-color: $color-highlight;
+}
+
