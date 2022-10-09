@@ -14,6 +14,13 @@
 
   <header class="page-header">
     <nav class="page-header__menu">
+      <button class="button menu__burger">
+        <svg width="20" height="9" viewBox="0 0 20 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="20" height="1" fill="black" />
+          <rect y="4" width="20" height="1" fill="black" />
+          <rect y="8" width="10" height="1" fill="black" />
+        </svg>
+      </button>
       <ul class="menu__list">
         <li class="menu__item">
           <a class="menu__link menu__link--active" href="#">Каталог</a>
@@ -165,6 +172,9 @@
                 </svg>
               </button>
             </div>
+            <div class="catalog-filters">
+              <span class="catalog-filters__list">Фільтри</span>
+            </div>
             <div class="catalog-sort">
               <span class="catalog-sort__title">Сортувати за:</span>
               <select class="catalog-sort__menu" name="sort" id="sort">
@@ -280,12 +290,15 @@
         </div>
       </section>
     </div>
+    <a class="button-top__link" href="#">
+      <img class="button-top__icon" src="./assets/img/components/page-footer/ic-footer-arrow.svg" alt="">
+    </a>
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__inner">
       <a class="page-footer__logo" href="index.html">
-        <img class="logo__img" src="./assets/img/components/page-footer/logo-etnodim.svg" alt="logotype etnodim">
+        <img class="page-footer__img" src="./assets/img/components/page-footer/logo-etnodim.svg" alt="logotype etnodim">
       </a>
       <div class="page-footer__content">
         <div class="page-footer__navigation">

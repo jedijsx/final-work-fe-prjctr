@@ -1,9 +1,14 @@
 @use "../../common/" as *;
 @use "../../presets/" as *;
+@use "../../mixins/" as *;
 
 .product {
 
   flex-basis: calc(50% - 28px);
+
+  @include xs {
+    flex-basis: calc(50% - 10px);
+  }
 
   &__view {
     max-width: 507px;
@@ -30,6 +35,11 @@
     font-size: 14px;
     line-height: 1.66;
     margin-bottom: 5px;
+
+    @include xs {
+      font-size: 12px;
+      line-height: 1.4;
+    }
   }
 
   &__price {

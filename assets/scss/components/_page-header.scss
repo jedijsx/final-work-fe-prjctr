@@ -1,5 +1,6 @@
 @use "../common/" as *;
 @use "../presets/" as *;
+@use "../mixins/" as *;
 
 .page-header {
 
@@ -10,10 +11,43 @@
   justify-content: space-between;
   align-items: center;
 
+  @include md {
+    height: 40px
+  }
+
+  &__logo  {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img {
+    @include md {
+      width: 50%;
+      height: 50%;
+    }
+  }
+  
   .menu__list,
   .action__list {
     display: flex;
     align-items: center;
+  }
+
+  .menu__burger {
+    display: none;
+  }
+
+  .menu__list {
+    @include md {
+      display: none;
+    }
+  }
+
+  .menu__burger {
+    @include md {
+      display: flex;
+      width: 56px;
+    }
   }
 
   .menu__list {
@@ -31,6 +65,10 @@
 
   .action__list {
     gap: 20px;
+
+    @include sm {
+      gap: 10px;
+    }
   }
 
   .action__lang,
@@ -51,6 +89,16 @@
     top: -3px;
   }
 
+  .action__item{
+    position: relative;
+  }
+
+  .action__item:nth-child(-n+3) {
+    @include md {
+      display: none;
+    }
+  }
+
   .action__button {
     height: 25px;
     width: 25px;
@@ -58,14 +106,45 @@
 
     &--search {
       background-image: url('../img/components/page-header/ic-search.svg');
-    }
+      background-size: contain;
+      height: 25px;
+      width: 25px;
 
-    &--search:hover {
-      background-image: url('../img/components/page-header/ic-search-hover.svg');
+      @include sm {
+        height: 20px;
+        width: 20px;
+      }
     }
 
     &--cart {
       background-image: url('../img/components/page-header/ic-cart.svg');
+      background-size: contain;
+      height: 25px;
+      width: 25px;
+
+      @include sm {
+        height: 20px;
+        width: 20px;
+      }
+    }
+
+    &--cart::after {
+      content: '1';
+      font-size: 8px;
+      color: $color-white;
+      text-align: center;
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $color-highlight;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    &--search:hover {
+      background-image: url('../img/components/page-header/ic-search-hover.svg');
     }
 
     &--cart:hover {

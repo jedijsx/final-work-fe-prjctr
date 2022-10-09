@@ -1,10 +1,17 @@
 @use "../../common/" as *;
 @use "../../presets/" as *;
+@use "../../mixins/" as *;
 
 .main-catalog {
   @extend %container;
 
+  position: relative;
+
   padding-bottom: 130px;
+
+  @include sm {
+    padding-bottom: 50px;
+  }
 
   &__inner {
     display: flex;
@@ -16,5 +23,9 @@
 
   .catalog {
     flex-basis: 84%;
+
+    @include sm {
+      flex-basis: 100%;
+    }
   }
 }

@@ -1,11 +1,16 @@
 @use "../common/" as *;
 @use "../presets/" as *;
+@use "../mixins/" as *;
 
 
 .breadcrumbs {
   height: 32px;
   display: flex;
   align-items: center;
+
+  @include sm {
+    display: none;
+  }
 
   &__list {
     display: flex;

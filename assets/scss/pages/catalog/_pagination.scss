@@ -1,5 +1,6 @@
 @use "../../common/" as *;
 @use "../../presets/" as *;
+@use "../../mixins/" as *;
 
 .catalog-pagination {
   padding-top: 64px;
@@ -7,11 +8,28 @@
   justify-content: flex-end;
   gap: 28%;
 
+  @include sm {
+    padding-top: 50px;
+  }
+
+  @include sm {
+    justify-content: center;
+  }
+
   &__more {
     text-transform: uppercase;
     text-decoration: underline;
     font-weight: 600;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__more::after {
+    content: url('../img/pages/catalog/ic-more.svg');
+    width: 18px;
+    height: 18px;
   }
 
   &__more:hover {
@@ -22,6 +40,10 @@
   &__list {
     display: flex;
     gap: 10px;
+
+    @include sm {
+      display: none;
+    }
   }
 
   &__link {

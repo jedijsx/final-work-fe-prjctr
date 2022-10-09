@@ -1,0 +1,32 @@
+@use "../common/" as *;
+@use "../presets/" as *;
+@use "../mixins/" as *;
+
+.button {
+  cursor: pointer;
+  display: inline-flex;
+  border: none;
+  transition: .5s;
+  background-color: $color-white;
+}
+
+.button:hover {
+  opacity: .5;
+}
+
+.button-top__link {
+  display: flex;
+  position: absolute;
+  bottom: -1%;
+  right: 50%;
+}
+
+.button-top__icon {
+  width: 30px;
+  height: 56px;
+
+  @include sm {
+    width: 16px;
+    height: 30px;
+  }
+}
