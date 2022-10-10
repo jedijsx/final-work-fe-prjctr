@@ -23,9 +23,12 @@
   }
 
   &__img {
+    width: 130px;
+    height: 15px;
+
     @include sm {
-      width: 30%;
-      height: 30%;
+      width: 92px;
+      height: 10px;
     }
   }
 

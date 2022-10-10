@@ -9,3 +9,15 @@
     display: none;
   }
 }
+
+.filter.filter--mobile {
+  @include sm {
+    display: block;
+    position: absolute;
+    top: 100px;
+    width: 340px;
+    height: 540px;
+    background-color: $color-white;
+    box-shadow: 8px 8px 12px rgba($color-gray, .2);
+  }
+}

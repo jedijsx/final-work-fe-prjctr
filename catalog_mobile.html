@@ -75,74 +75,102 @@
       </ul>
     </div>
     <div class="main-catalog__inner">
-      <aside class="filter">
+      <aside class="filter filter--mobile">
         <form class="filter__form" action="/ua/zhinkam/" method="get">
-          <div class="form__section">
-            <span class="form__title form__title--active">Розмір</span>
-            <div>
-              <input class="form__checkbox" type="checkbox" id="XXS" name="XXS">
-              <label class="form__label" for="XXS">32 | XXS (53)</label>
+          <div>
+            <div class="form__section">
+              <span class="form__title form__title--active">Розмір</span>
+              <div>
+                <input class="form__checkbox" type="checkbox" id="XXS" name="XXS">
+                <label class="form__label" for="XXS">32 | XXS (53)</label>
+              </div>
+              <div>
+                <input class="form__checkbox" type="checkbox" id="XS" name="XS">
+                <label class="form__label" for="XS">34 | XS (60)</label>
+              </div>
+              <div>
+                <input class="form__checkbox" type="checkbox" id="S" name="S">
+                <label class="form__label" for="S">36 | S (60)</label>
+              </div>
+              <div>
+                <input class="form__checkbox" type="checkbox" id="M" name="M">
+                <label class="form__label" for="M">38 | M (60)</label>
+              </div>
+              <div>
+                <input class="form__checkbox" type="checkbox" id="L" name="L">
+                <label class="form__label" for="L">40 | L (60)</label>
+              </div>
+              <div>
+                <input class="form__checkbox" type="checkbox" id="XL" name="XL">
+                <label class="form__label" for="XL">42 | XL (58)</label>
+              </div>
+              <div>
+                <input class="form__checkbox" type="checkbox" id="XXL" name="XXL">
+                <label class="form__label" for="XXL">46 | XXL (13)</label>
+              </div>
+              <div>
+                <input class="form__checkbox" type="checkbox" id="XXXL" name="XXXL">
+                <label class="form__label" for="XXXL">48 | XХXL (4)</label>
+              </div>
             </div>
-            <div>
-              <input class="form__checkbox" type="checkbox" id="XS" name="XS">
-              <label class="form__label" for="XS">34 | XS (60)</label>
-            </div>
-            <div>
-              <input class="form__checkbox" type="checkbox" id="S" name="S">
-              <label class="form__label" for="S">36 | S (60)</label>
-            </div>
-            <div>
-              <input class="form__checkbox" type="checkbox" id="M" name="M">
-              <label class="form__label" for="M">38 | M (60)</label>
-            </div>
-            <div>
-              <input class="form__checkbox" type="checkbox" id="L" name="L">
-              <label class="form__label" for="L">40 | L (60)</label>
-            </div>
-            <div>
-              <input class="form__checkbox" type="checkbox" id="XL" name="XL">
-              <label class="form__label" for="XL">42 | XL (58)</label>
-            </div>
-            <div>
-              <input class="form__checkbox" type="checkbox" id="XXL" name="XXL">
-              <label class="form__label" for="XXL">46 | XXL (13)</label>
-            </div>
-            <div>
-              <input class="form__checkbox" type="checkbox" id="XXXL" name="XXXL">
-              <label class="form__label" for="XXXL">48 | XХXL (4)</label>
+            <div class="form__section">
+              <span class="form__title form__title--active">Колір</span>
+              <div>
+                <input class="form__checkbox" type="checkbox" id="white" name="white">
+                <label class="form__label" for="white">білий</label>
+              </div>
+              <div>
+                <input class="form__checkbox" type="checkbox" id="black" name="black">
+                <label class="form__label" for="black">чорний</label>
+              </div>
+              <div>
+                <input class="form__checkbox" type="checkbox" id="beige" name="beige">
+                <label class="form__label" for="beige">бежевий</label>
+              </div>
+              <div>
+                <input class="form__checkbox" type="checkbox" id="green" name="green">
+                <label class="form__label" for="green">зелений</label>
+              </div>
+              <div>
+                <input class="form__checkbox" type="checkbox" id="blue" name="blue">
+                <label class="form__label" for="blue">синій</label>
+              </div>
             </div>
           </div>
-          <div class="form__section">
-            <span class="form__title form__title--active">Колір</span>
-            <div>
-              <input class="form__checkbox" type="checkbox" id="white" name="white">
-              <label class="form__label" for="white">білий</label>
+          <div>
+            <div class="form__section">
+              <span class="form__title">Сезон</span>
+              <div>
+                <input class="form__checkbox" type="checkbox" id="easy" name="easy">
+                <label class="form__label" for="easy">Easy collection (3)</label>
+              </div>
+              <div>
+                <input class="form__checkbox" type="checkbox" id="all" name="all">
+                <label class="form__label" for="all">Усі сезони (46)</label>
+              </div>
             </div>
-            <div>
-              <input class="form__checkbox" type="checkbox" id="black" name="black">
-              <label class="form__label" for="black">чорний</label>
+            <div class="form__section">
+              <span class="form__title">Тканина</span>
+              <div>
+                <input class="form__checkbox" type="checkbox" id="linen" name="linen">
+                <label class="form__label" for="linen">Льон (60)</label>
+              </div>
+              <div>
+                <input class="form__checkbox" type="checkbox" id="sateen" name="sateen">
+                <label class="form__label" for="sateen">Сатин (1)</label>
+              </div>
             </div>
-            <div>
-              <input class="form__checkbox" type="checkbox" id="beige" name="beige">
-              <label class="form__label" for="beige">бежевий</label>
+            <div class="form__section">
+              <span class="form__title">Рукав</span>
+              <div>
+                <input class="form__checkbox" type="checkbox" id="long" name="long">
+                <label class="form__label" for="long">Довгий рукав (49)</label>
+              </div>
+              <div>
+                <input class="form__checkbox" type="checkbox" id="quarter" name="quarter">
+                <label class="form__label" for="quarter">3/4 рукав (11)</label>
+              </div>
             </div>
-            <div>
-              <input class="form__checkbox" type="checkbox" id="green" name="green">
-              <label class="form__label" for="green">зелений</label>
-            </div>
-            <div>
-              <input class="form__checkbox" type="checkbox" id="blue" name="blue">
-              <label class="form__label" for="blue">синій</label>
-            </div>
-          </div>
-          <div class="form__section">
-            <span class="form__title">Сезон</span>
-          </div>
-          <div class="form__sections">
-            <span class="form__title">Тканина</span>
-          </div>
-          <div class="form__sections">
-            <span class="form__title">Рукав</span>
           </div>
         </form>
       </aside>
@@ -173,7 +201,7 @@
               </button>
             </div>
             <div class="catalog-filters">
-              <a class="catalog-filters__list" href="./catalog_mobile.html">Фільтри</a>
+              <a class="catalog-filters__list catalog-filters__list--active" href="./catalog.html">Фільтри</a>
             </div>
             <div class="catalog-sort">
               <span class="catalog-sort__title">Сортувати за:</span>
