@@ -2,8 +2,10 @@
 @use "../mixins" as *;
 
 
-html {
-  font-family: 'Raleway';
+body {
+  font-family: 'Raleway',
+  'Segoe UI', 
+  'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   line-height: 1.2;
   color: $color-black;
@@ -25,7 +27,9 @@ ul {
 }
 
 h2 {
-  font-family: 'Dela Gothic One';
+  font-family: 'Dela Gothic One',
+  'Segoe UI', 
+  'Helvetica Neue', Arial, sans-serif;;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.4;

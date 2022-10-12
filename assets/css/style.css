@@ -362,8 +362,8 @@ template {
   padding: 0;
 }
 
-html {
-  font-family: "Raleway";
+body {
+  font-family: "Raleway", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.2;
   color: #000000;
@@ -385,7 +385,7 @@ ul {
 }
 
 h2 {
-  font-family: "Dela Gothic One";
+  font-family: "Dela Gothic One", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.4;
@@ -817,6 +817,7 @@ h2 {
   cursor: pointer;
 }
 .catalog-filters__list {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1034,7 +1035,7 @@ h2 {
   .filter.filter--mobile {
     display: block;
     position: absolute;
-    top: 100px;
+    top: 60px;
     width: 340px;
     height: 540px;
     background-color: #ffffff;

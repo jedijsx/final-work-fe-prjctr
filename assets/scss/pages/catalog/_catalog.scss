@@ -37,6 +37,7 @@
     cursor: pointer;
 
     &__list {
+      position: relative;
       display: flex;
       gap: 5px;
     }
