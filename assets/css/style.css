@@ -319,12 +319,6 @@ template {
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../fonts/Raleway-Thin.woff") format("woff");
-  font-weight: 100;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Raleway";
   src: url("../fonts/Raleway-Light.woff") format("woff");
   font-weight: 300;
   font-display: swap;
@@ -445,7 +439,7 @@ h2 {
   gap: 5px;
 }
 .page-header .action__currency {
-  font-weight: 100;
+  font-weight: 300;
   font-size: 20px;
 }
 .page-header .action__lang::after,
